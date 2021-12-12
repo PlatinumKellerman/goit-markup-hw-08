@@ -1,0 +1,221 @@
+.modal__form {
+  display: block;
+}
+
+.modal__tittle {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.15em;
+  margin-bottom: 12px;
+  color: $main-h2h3;
+  pointer-events: none;
+  user-select: none;
+}
+
+.modal__labels {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  line-height: 1.16em;
+  letter-spacing: 0.01em;
+  color: $main-text;
+  margin-bottom: 10px;
+  user-select: none;
+}
+
+.modal__label-name {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16em;
+  letter-spacing: 0.01em;
+  color: $main-text;
+  margin-bottom: 4px;
+}
+
+.modal__comment-label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16em;
+  letter-spacing: 0.01em;
+  color: $main-text;
+  margin-bottom: 20px;
+  user-select: none;
+}
+
+.modal__text-field {
+  height: 120px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  resize: none;
+  cursor: pointer;
+  transition-property: border-color;
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:hover,
+  &:focus {
+    outline: 0;
+    border-color: $accent;
+  }
+}
+
+.modal__inputs {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 42px;
+  cursor: pointer;
+  transition-property: fill, border-color;
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
+  &:focus,
+  &:hover {
+    border-color: $accent;
+    outline: 0;
+  }
+}
+
+.modal__user-icon,
+.modal__phone-icon,
+.modal__mail-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(12px) translateY(31px);
+  fill: $main-h2h3;
+  transition-property: fill;
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
+  &:hover,
+  &:hover,
+  &:hover {
+    cursor: pointer;
+    fill: $accent;
+  }
+  .modal__inputs:focus + &,
+  .modal__inputs:hover + & {
+    fill: $accent;
+  }
+  .modal__inputs:focus + &,
+  .modal__inputs:hover + & {
+    fill: $accent;
+  }
+  .modal__inputs:focus + &,
+  .modal__inputs:hover + & {
+    fill: $accent;
+  }
+}
+
+.modal__checkbox {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+  user-select: none;
+}
+
+.modal__checkbox-link {
+  font-family: $fontRoboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71em;
+  color: $accent;
+  text-decoration-skip-ink: none;
+  text-decoration: underline;
+}
+
+.modal__chekbox-text {
+  font-family: $fontRoboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71em;
+  color: $main-text;
+  padding-left: 25px;
+  padding-right: 5px;
+}
+
+.modal__icon-square {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition-property: fill;
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
+  transform: translateX(10px) translateY(4px);
+  .modal__input-checkbox:checked + & {
+    background-color: $accent;
+    border-radius: 2px;
+    fill: $accent;
+  }
+  .modal__input-checkbox:focus + & {
+    fill: $accent;
+  }
+  .modal__input-checkbox:hover + & {
+    fill: $accent;
+  }
+}
+
+.modal__icon-check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(11px) translateY(4px);
+  fill: $background;
+  cursor: pointer;
+  .modal__input-checkbox:checked + .modal__icon-square + & {
+    fill: $background;
+  }
+}
+
+.modal__send-button {
+  display: block;
+  width: 200px;
+  background: $accent;
+  font-family: $fontRoboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875em;
+  letter-spacing: 0.06em;
+  color: $background;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.modal__input-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-boxshadow: 0 0 0px 1000px $background inset;
+}
