@@ -13,5 +13,9 @@
     ],
     "liveSassCompile.settings.ecxludeList": ["**/node_modules/**", ".vscode/**"],
     "liveSassCompile.settings.generateMap": true,
-    "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "editor.parameterHints.cycle": true
 }

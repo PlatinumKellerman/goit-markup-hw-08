@@ -1,0 +1,33 @@
+.header-box {
+  border-bottom: 1px solid $header-border;
+}
+
+.navigation__logo {
+  display: inline-block;
+  vertical-align: top;
+  color: $accent;
+  font-family: $fontRaleway;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1666;
+  text-decoration: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.navigation__name {
+  color: $logo-text;
+  font-family: $fontRaleway;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1666;
+}
+
+.mobile-button {
+  display: block;
+  float: right;
+  border: none;
+  padding-left: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

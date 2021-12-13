@@ -1,36 +1,34 @@
 .section--hero {
-  display: flex;
+  width: 480px;
+  height: 400px;
   background-color: $hero-background;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
-  height: 600px;
   margin-right: auto;
   margin-left: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/overlay.jpg);
+    url(../images/mobile-overlay.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 118px 60px;
 }
 
 .container--hero {
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
+  display: block;
+  width: 480px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .container__hero-title {
   font-family: $fontRoboto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6153;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $background;
-  width: 696px;
-  margin: 0 auto;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .container__hero-button {
