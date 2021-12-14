@@ -1,55 +1,102 @@
-.section--hero {
-  width: 480px;
-  height: 400px;
-  background-color: $hero-background;
-  margin-right: auto;
-  margin-left: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/mobile-overlay.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 118px 60px;
-}
+@media screen and (max-width: 480px) {
+  .hero--mobile {
+    height: 100%;
+    background-color: $hero-background;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/mobile-overlay.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 
-.container--hero {
-  display: block;
-  width: 480px;
-  margin-right: auto;
-  margin-left: auto;
-}
+  .container__hero-title {
+    font-family: $fontRoboto;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6153;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $background;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 
-.container__hero-title {
-  font-family: $fontRoboto;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.6153;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $background;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.container__hero-button {
-  font-family: $fontRoboto;
-  background-color: $accent;
-  color: $background;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  border: none;
-  border-radius: 4px;
-  display: block;
-  padding: 10px 32px;
-  margin-left: auto;
-  margin-right: auto;
-  &:hover,
-  &:focus,
-  &:active {
+  .container__hero-button {
+    font-family: $fontRoboto;
     background-color: $accent;
     color: $background;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    padding: 10px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $accent;
+      color: $background;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .hero--mobile {
+    width: 480px;
+    background-color: $hero-background;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/mobile-overlay.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  .container__hero-title {
+    width: 480px;
+    font-family: $fontRoboto;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6153;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $background;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .container__hero-button {
+    font-family: $fontRoboto;
+    background-color: $accent;
+    color: $background;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    padding: 10px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $accent;
+      color: $background;
+    }
   }
 }
