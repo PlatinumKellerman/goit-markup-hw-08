@@ -1,0 +1,122 @@
+@media screen and (max-width: 479px) {
+  .section-clients--mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-mobile--direction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .clients-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .container__clients-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.1785;
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .clients-list__link {
+    width: 210px;
+    height: 92px;
+    display: flex;
+    cursor: pointer;
+    border: 1px solid $icon-unactive;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    fill: $icon-unactive;
+    transition-property: fill, border-color;
+    transition-duration: $transition-time;
+    transition-timing-function: $cubic;
+    &:hover,
+    &:focus {
+      fill: $accent;
+      border: 1px solid $accent;
+    }
+  }
+  .clients-list__items {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0px;
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0px;
+      }
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .section-clients--mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-mobile--direction {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    justify-content: center;
+  }
+
+  .container__clients-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.1785;
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .clients-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .clients-list__items {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .clients-list__link {
+    width: 210px;
+    height: 92px;
+    display: flex;
+    cursor: pointer;
+    border: 1px solid $icon-unactive;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    fill: $icon-unactive;
+    transition-property: fill, border-color;
+    transition-duration: $transition-time;
+    transition-timing-function: $cubic;
+    &:hover,
+    &:focus {
+      fill: $accent;
+      border: 1px solid $accent;
+    }
+  }
+}
