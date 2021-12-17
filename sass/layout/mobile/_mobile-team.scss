@@ -109,4 +109,10 @@
   .section--bgcolor {
     width: 480px;
   }
+
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    .section--bgcolor {
+      width: 767px;
+    }
+  }
 }
