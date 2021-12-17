@@ -1,13 +1,18 @@
-.container--mobile {
+.container {
   display: block;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
+@media screen and (max-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
 @media screen and (min-width: 480px) {
-  .container--mobile {
+  .container {
     width: 480px;
   }
 }
