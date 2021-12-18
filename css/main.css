@@ -1090,7 +1090,7 @@ ul {
 
 .container__business-subtitle {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   width: 100%;
   height: 70px;
   display: -webkit-box;
