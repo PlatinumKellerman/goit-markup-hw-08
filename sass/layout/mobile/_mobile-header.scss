@@ -218,6 +218,9 @@
   text-decoration: none;
   padding-top: 16px;
   padding-bottom: 16px;
+  &:focus {
+    color: $accent;
+  }
 }
 
 .navigation__name {
@@ -259,7 +262,8 @@
   transition-timing-function: $cubic;
   position: relative;
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     color: $accent;
   }
 }
@@ -312,6 +316,7 @@
 }
 
 .contacts-list__link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -357,6 +362,9 @@
   .mobile-menu-wrapper {
     display: none;
   }
+  .menu-container {
+    display: none;
+  }
   .container-tablet {
     width: 768px;
     display: flex;
@@ -379,6 +387,9 @@
 
 @media screen and (min-width: 1200px) {
   .mobile-menu-wrapper {
+    display: none;
+  }
+  .menu-container {
     display: none;
   }
   .container-desktop {
