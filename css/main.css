@@ -871,6 +871,16 @@ ul {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container__hero-button {
+    cursor: pointer;
+  }
+  .container__hero-title {
+    font-size: 44px;
+    line-height: 1.3636;
+  }
+}
+
 .container__hero-title {
   max-width: 360px;
   margin: 0 auto;
