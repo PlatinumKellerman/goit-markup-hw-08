@@ -48,11 +48,11 @@
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   &:hover,
   &:focus,
   &:active {
     background-color: $accent;
     color: $background;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
