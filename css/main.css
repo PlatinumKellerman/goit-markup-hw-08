@@ -1063,7 +1063,7 @@ ul {
   text-align: center;
 }
 
-.container--direction {
+.container-team {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -1080,26 +1080,12 @@ ul {
 .container__team-item {
   display: block;
   list-style: none;
-  margin-bottom: 30px;
   background-color: #f5f4fa;
 }
 
-.container__team-item:last-child {
-  margin-right: 0;
-}
-
-.container__team-img--desktop {
-  display: none;
-}
-
-.container__team-img--mobile {
-  display: block;
-  height: auto;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .container__team-text {
+  display: block;
+  width: 100%;
   padding-top: 30px;
   padding-bottom: 24px;
   background-color: #ffffff;
@@ -1181,15 +1167,33 @@ ul {
   fill: currentColor;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .section--bgcolor {
-    width: 480px;
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .container__team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container__team-item {
+    -ms-flex-preferred-size: calc((100% / 2) - 30px);
+        flex-basis: calc((100% / 2) - 30px);
+    margin: 15px;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) and (min-width: 767px) and (max-width: 1199px) {
-  .section--bgcolor {
-    width: 767px;
+@media screen and (min-width: 769px) and (max-width: 1199px) and (min-width: 1200px) {
+  .container__team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .container__team-item {
+    -ms-flex-preferred-size: calc((100% / 4) - 30px);
+        flex-basis: calc((100% / 4) - 30px);
+    margin: 15px;
   }
 }
 
@@ -1267,6 +1271,10 @@ ul {
     width: 226px;
     height: 92px;
   }
+  .feature-list__subtitle {
+    display: block;
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1278,6 +1286,10 @@ ul {
   }
   .container-clients {
     width: 1200px;
+  }
+  .feature-list__subtitle {
+    display: block;
+    text-align: start;
   }
 }
 
