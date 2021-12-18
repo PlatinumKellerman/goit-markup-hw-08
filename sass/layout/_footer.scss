@@ -1,436 +1,285 @@
-@media screen and (max-width: 479px) {
-  .foot {
-    margin-right: auto;
-    margin-left: auto;
-    background-color: $hero-background;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+.foot {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: $hero-background;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
-  .basement--direction {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-  }
+.basement-container {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
 
-  .foot-container {
-    margin-bottom: 60px;
-  }
+.foot-container {
+  margin-bottom: 60px;
+}
 
-  .foot-container__logo {
-    display: block;
-    margin-bottom: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
+.foot-container__logo {
+  display: block;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  color: $accent;
+  font-family: $fontRaleway;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1666;
+  text-decoration: none;
+}
+
+.foot-container__logo-text {
+  font-family: $fontRaleway;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1666;
+  color: $background;
+}
+
+.foot-container__address {
+  display: block;
+  font-size: 14px;
+  line-height: 1.7142;
+  font-style: normal;
+  color: $background;
+}
+
+.foot-container__list {
+  list-style: none;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.foot-container__item {
+  margin-bottom: 8px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.foot-container__link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.7142;
+  font-style: normal;
+  font-weight: normal;
+  color: $background;
+  transition-property: color;
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
+  &:hover,
+  &:focus,
+  &:active {
     color: $accent;
-    font-family: $fontRaleway;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.1666;
-    text-decoration: none;
   }
+}
 
-  .foot-container__logo-text {
-    font-family: $fontRaleway;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.1666;
-    color: $background;
+.foot-container__contacts-link {
+  text-decoration: none;
+  color: $footer;
+  transition-property: color;
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $accent;
   }
+}
 
-  .foot-container__address {
-    display: block;
-    font-size: 14px;
-    line-height: 1.7142;
-    font-style: normal;
-    color: $background;
+.social-invite {
+  display: block;
+  margin-bottom: 60px;
+}
+
+.social-invite__title {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  color: $background;
+  font-size: 14px;
+  line-height: 1.1428;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.social-invite__list {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.social-invite__icon {
+  align-self: center;
+}
+
+.social-invite__item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  border-radius: 50%;
+  &:last-child {
+    margin-right: 0;
   }
+}
 
-  .foot-container__list {
-    list-style: none;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-  }
-
-  .foot-container__item {
-    margin-bottom: 8px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  .foot-container__link {
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 1.7142;
-    font-style: normal;
-    font-weight: normal;
-    color: $background;
-    transition-property: color;
-    transition-duration: $transition-time;
-    transition-timing-function: $cubic;
-    &:hover,
-    &:focus,
-    &:active {
-      color: $accent;
-    }
-  }
-
-  .foot-container__contacts-link {
-    text-decoration: none;
-    color: $footer;
-    transition-property: color;
-    transition-duration: $transition-time;
-    transition-timing-function: $cubic;
-    &:hover,
-    &:focus,
-    &:active {
-      color: $accent;
-    }
-  }
-
-  .social-invite {
-    display: block;
-    margin-bottom: 60px;
-  }
-
-  .social-invite__title {
-    display: block;
-    text-align: center;
-    font-weight: 700;
-    color: $background;
-    font-size: 14px;
-    line-height: 1.1428;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    margin-bottom: 20px;
-    font-style: normal;
-    font-weight: bold;
-  }
-
-  .social-invite__list {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    list-style: none;
-  }
-
-  .social-invite__icon {
-    align-self: center;
-  }
-
-  .social-invite__item {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    margin-right: 10px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
-    border-radius: 50%;
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  .social-invite__link {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    fill: $background;
-    color: $background;
-    border-radius: 50%;
-    transition-property: background-color, fill, border-radius;
-    transition-duration: $transition-time;
-    transition-timing-function: $cubic;
-    &:hover,
-    &:focus {
-      background-color: $accent;
-      fill: $background;
-    }
-  }
-
-  .footer-signup {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .footer-signup__title {
-    display: block;
-    font-style: normal;
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.1428;
-    font-weight: 700;
-    color: $background;
-    margin-bottom: 20px;
-  }
-
-  .footer-signup__email {
-    display: block;
-    width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    background-color: $hero-background;
-    color: $background;
-    border-radius: 4px;
-    padding-left: 16px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
-  }
-
-  .footer-signup__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: auto;
-    margin-left: auto;
-    width: 200px;
-    height: 50%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: none;
-    font-family: $fontRoboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875em;
-    letter-spacing: 0.06em;
-    color: $background;
+.social-invite__link {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  fill: $background;
+  color: $background;
+  border-radius: 50%;
+  transition-property: background-color, fill, border-radius;
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
+  &:hover,
+  &:focus {
     background-color: $accent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-  }
-
-  .footer-signup__button-text {
-    margin-right: 10px;
-  }
-
-  .footer-signup__icon {
     fill: $background;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .foot {
-    width: 480px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: $hero-background;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+.footer-signup {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
 
-  .basement--direction {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-  }
+.footer-signup__title {
+  display: block;
+  font-style: normal;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.1428;
+  font-weight: 700;
+  color: $background;
+  margin-bottom: 20px;
+}
 
-  .foot-container {
-    margin-bottom: 60px;
+.footer-signup__email {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: $hero-background;
+  color: $background;
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition-property: fill, border-color;
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
+  &:focus,
+  &:hover {
+    border-color: $accent;
+    outline: 0;
   }
+}
 
-  .foot-container__logo {
-    display: block;
-    margin-bottom: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    color: $accent;
-    font-family: $fontRaleway;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.1666;
-    text-decoration: none;
-  }
+.footer-signup__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  width: 200px;
+  height: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  font-family: $fontRoboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875em;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: $background;
+  background-color: $accent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
 
-  .foot-container__logo-text {
-    font-family: $fontRaleway;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.1666;
-    color: $background;
-  }
+.footer-signup__button-text {
+  margin-right: 10px;
+}
 
-  .foot-container__address {
-    display: block;
-    font-size: 14px;
-    line-height: 1.7142;
-    font-style: normal;
-    color: $background;
-  }
+.footer-signup__icon {
+  fill: $background;
+}
 
-  .foot-container__list {
-    list-style: none;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-  }
-
-  .foot-container__item {
-    margin-bottom: 8px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  .foot-container__link {
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 1.7142;
-    font-style: normal;
-    font-weight: normal;
-    color: $background;
-    transition-property: color;
-    transition-duration: $transition-time;
-    transition-timing-function: $cubic;
-    &:hover,
-    &:focus,
-    &:active {
-      color: $accent;
-    }
-  }
-
-  .foot-container__contacts-link {
-    text-decoration: none;
-    color: $footer;
-    transition-property: color;
-    transition-duration: $transition-time;
-    transition-timing-function: $cubic;
-    &:hover,
-    &:focus,
-    &:active {
-      color: $accent;
-    }
-  }
-
-  .social-invite {
-    display: block;
-    margin-bottom: 60px;
-  }
-
-  .social-invite__title {
-    display: block;
-    text-align: center;
-    font-weight: 700;
-    color: $background;
-    font-size: 14px;
-    line-height: 1.1428;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    margin-bottom: 20px;
-    font-style: normal;
-    font-weight: bold;
-  }
-
-  .social-invite__list {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-tablet-wrapper {
     display: flex;
-    align-content: center;
-    justify-content: center;
-    list-style: none;
-  }
-
-  .social-invite__icon {
-    align-self: center;
-  }
-
-  .social-invite__item {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    margin-right: 10px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
-    border-radius: 50%;
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  .social-invite__link {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    fill: $background;
-    color: $background;
-    border-radius: 50%;
-    transition-property: background-color, fill, border-radius;
-    transition-duration: $transition-time;
-    transition-timing-function: $cubic;
-    &:hover,
-    &:focus {
-      background-color: $accent;
-      fill: $background;
-    }
-  }
-
-  .footer-signup {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .footer-signup__title {
-    display: block;
-    font-style: normal;
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.1428;
-    font-weight: 700;
-    color: $background;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    padding: 0 60px;
   }
 
   .footer-signup__email {
-    display: block;
-    width: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    background-color: $hero-background;
-    color: $background;
-    border-radius: 4px;
-    padding-left: 16px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
-  }
-
-  .footer-signup__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 450px;
     margin-right: auto;
     margin-left: auto;
-    width: 200px;
-    height: 50%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: none;
-    font-family: $fontRoboto;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875em;
-    letter-spacing: 0.06em;
-    color: $background;
-    background-color: $accent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .basement-container {
+    width: 1200px;
+    display: flex;
+  }
+  .social-invite__title {
+    align-items: baseline;
+    text-align: left;
   }
 
-  .footer-signup__button-text {
-    margin-right: 10px;
+  .footer-tablet-wrapper {
+    display: flex;
+  }
+  .foot-container {
+    margin-bottom: 0;
+    margin-right: 83px;
+  }
+  .social-invite {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: 0;
+    margin-right: 93px;
+  }
+  .foot-container__logo {
+    text-align: left;
+  }
+  .foot-container__list {
+    text-align: left;
+  }
+  .footer-signup {
+    width: 570px;
+    margin: 0;
+  }
+  .footer-signup__form {
+    display: flex;
+  }
+  .footer-signup__title {
+    text-align: left;
   }
 
-  .footer-signup__icon {
-    fill: $background;
+  .footer-signup__email {
+    width: 358px;
+    margin: 0;
+    margin-right: 12px;
   }
 }

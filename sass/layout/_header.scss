@@ -1,11 +1,15 @@
 .menu-toggle {
-  .icon-cross {
-    display: none;
-  }
+  transition-property: color, background-color, fill;
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
   &:focus,
   &:hover,
   &:active {
     fill: $accent;
+  }
+  cursor: pointer;
+  .icon-cross {
+    display: none;
   }
 }
 
@@ -46,9 +50,15 @@
   top: 0;
   right: 0;
   border: none;
+  cursor: pointer;
   .menu-button-icon {
+    border-radius: 50%;
+    transition-property: color, background-color, fill;
+    transition-duration: $transition-time;
+    transition-timing-function: $cubic;
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
       fill: $accent;
     }
   }
@@ -79,6 +89,9 @@
   line-height: 1.175;
   color: $main-h2h3;
   letter-spacing: 0.02em;
+  transition-property: color, background-color;
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
   &:hover,
   &:focus,
   &:active {
@@ -117,7 +130,15 @@
   font-size: 34px;
   line-height: 1.1764;
   letter-spacing: 0.02em;
-  color: $accent;
+  color: $main-text;
+  transition-property: color, background-color;
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $accent;
+  }
 }
 
 .menu-contacts-list__link--email {
@@ -129,6 +150,14 @@
   line-height: 1.1666;
   letter-spacing: 0.02em;
   color: $main-text;
+  transition-property: color, background-color;
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $accent;
+  }
 }
 
 .menu-social-list {
@@ -159,6 +188,14 @@
   line-height: 1.2222;
   letter-spacing: 0.02em;
   color: $accent;
+  transition-property: color, background-color;
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $main-text;
+  }
 }
 
 .navigation__logo--menu {
