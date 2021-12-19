@@ -339,12 +339,11 @@
 }
 
 .contacts-list {
-  list-style: none;
   display: flex;
 }
 
 .contacts-list__items {
-  justify-content: center;
+  display: flex;
 }
 
 .contacts-list__envelope {
@@ -360,7 +359,7 @@
 }
 
 .contacts-list__link {
-  display: block;
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -446,15 +445,14 @@
     list-style: none;
   }
 
-  .contacts-list__items {
-    margin-right: 30px;
-  }
-
   .navigation__logo {
     margin-right: 90px;
   }
 
   .navigation-list {
     margin-right: 292px;
+  }
+  .contacts-list__items {
+    padding-left: 30px;
   }
 }
