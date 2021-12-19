@@ -426,6 +426,9 @@
     align-items: flex-start;
     list-style: none;
   }
+  .contacts-list__items {
+    margin: 5px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

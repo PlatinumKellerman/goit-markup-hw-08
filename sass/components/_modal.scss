@@ -21,7 +21,7 @@
 
 .modal {
   display: block;
-  width: 90%;
+  width: 100%;
   height: auto;
   position: absolute;
   padding: 40px;
@@ -67,6 +67,12 @@
   .modal__close-button:hover &,
   .modal__close-button:focus & {
     fill: $accent;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    max-width: 450px;
   }
 }
 

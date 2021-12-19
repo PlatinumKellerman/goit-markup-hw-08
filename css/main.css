@@ -363,7 +363,7 @@ ul {
 
 .modal {
   display: block;
-  width: 90%;
+  width: 100%;
   height: auto;
   position: absolute;
   padding: 40px;
@@ -428,6 +428,12 @@ ul {
 .modal__close-button:hover .modal__icon-close,
 .modal__close-button:focus .modal__icon-close {
   fill: #2196f3;
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    max-width: 450px;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 1199px) {
@@ -500,7 +506,7 @@ ul {
 }
 
 .modal__text-field {
-  max-height: 120px;
+  height: 120px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1314,6 +1320,9 @@ input:-webkit-autofill:active {
         -ms-flex-align: start;
             align-items: flex-start;
     list-style: none;
+  }
+  .contacts-list__items {
+    margin: 5px;
   }
 }
 
