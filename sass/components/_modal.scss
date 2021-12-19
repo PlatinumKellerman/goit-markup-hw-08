@@ -20,6 +20,9 @@
 }
 
 .modal {
+  display: block;
+  width: 90%;
+  height: auto;
   position: absolute;
   padding: 40px;
   top: 50%;
@@ -67,12 +70,6 @@
   }
 }
 
-@media screen and (max-width: 479px) {
-  .modal {
-    max-width: 450px;
-    max-height: 609px;
-  }
-}
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     width: 450px;
