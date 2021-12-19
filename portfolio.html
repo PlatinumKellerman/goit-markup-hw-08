@@ -120,9 +120,9 @@
 
     <main>
       
-      <section class="section">
+<section class="section">
 
-          <div class="container container--direction">
+    <div class="container container-portfolio">
 
       <h1 class="container__portfolio-title">Портфолио</h1>
 
@@ -142,7 +142,16 @@
         <li class="projects-list__item">
             <a class="projects-list__link" href="">
             <div class="projects-list__thumb">
-                <img class="projects-list__img" src="./images/img1_1.jpg" width="370" alt="Фото-ноутбука">
+                <picture>
+                    <source srcset="./images/portfolio-overlay-desktop-1.jpg 1x,
+                                    ./images/portfolio-overlay-desktop-1@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/portfolio-overlay-tablet-1.jpg 1x,
+                                    ./images/portfolio-overlay-tablet-1@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio-overlay-mobile-1.jpg 1x,
+                                    ./images/portfolio-overlay-mobile-1@2x.jpg 2x" media="(min-width: 320px)">
+                    <img src="./images/portfolio-overlay-mobile-1.jpg" alt="Фото-ноутбука">
+                </picture>
+                
                 <p class="projects-list__overlay">
                     Технокряк это современная площадка распространения коронавируса.
                     Компании используют эту платформу для цифрового
@@ -161,7 +170,15 @@
         <li class="projects-list__item">
             <a class="projects-list__link" href="">
             <div class="projects-list__thumb">
-                <img class="projects-list__img" src="./images/img2_1.jpg" width="370" alt="Постер">
+                <picture>
+                    <source srcset="./images/portfolio-overlay-desktop-2.jpg 1x,
+                                                    ./images/portfolio-overlay-desktop-2@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/portfolio-overlay-tablet-2.jpg 1x,
+                                                    ./images/portfolio-overlay-tablet-2@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio-overlay-mobile-2.jpg 1x,
+                                                    ./images/portfolio-overlay-mobile-2@2x.jpg 2x" media="(min-width: 320px)">
+                    <img src="./images/portfolio-overlay-mobile-2.jpg" alt="Постер">
+                </picture>
                 <p class="projects-list__overlay">
                     Разнообразный и богатый опыт курс на социально-ориентированный 
                     национальный проект требует определения и уточнения
@@ -178,7 +195,15 @@
             <li class="projects-list__item">
             <a class="projects-list__link" href="">
                 <div class="projects-list__thumb">
-                <img class="projects-list__img" src="./images/img3_1.jpg" width="370" alt="Лого-ресторана">
+                    <picture>
+                        <source srcset="./images/portfolio-overlay-desktop-3.jpg 1x,
+                                                        ./images/portfolio-overlay-desktop-3@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/portfolio-overlay-tablet-3.jpg 1x,
+                                                        ./images/portfolio-overlay-tablet-3@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/portfolio-overlay-mobile-3.jpg 1x,
+                                                        ./images/portfolio-overlay-mobile-3@2x.jpg 2x" media="(min-width: 320px)">
+                        <img src="./images/portfolio-overlay-mobile-3.jpg" alt="Лого-ресторана">
+                    </picture>
                 <p class="projects-list__overlay">
                     Таким образом, таким вот образом, выбранный нами инновационный путь позволяет 
                     выполнить важнейшие задания по разработке дальнейших
@@ -195,7 +220,15 @@
             <li class="projects-list__item">
             <a class="projects-list__link" href="">
                 <div class="projects-list__thumb">
-                <img class="projects-list__img" src="./images/img4_1.jpg" width="370" alt="Фото-наушников">
+                    <picture>
+                        <source srcset="./images/portfolio-overlay-desktop-4.jpg 1x,
+                                                        ./images/portfolio-overlay-desktop-4@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/portfolio-overlay-tablet-4.jpg 1x,
+                                                        ./images/portfolio-overlay-tablet-4@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/portfolio-overlay-mobile-4.jpg 1x,
+                                                        ./images/portfolio-overlay-mobile-4@2x.jpg 2x" media="(min-width: 320px)">
+                        <img src="./images/portfolio-overlay-mobile-4.jpg" alt="Фото-наушников">
+                    </picture>
                 <p class="projects-list__overlay">
                     Задача организации, в особенности же начало повседневной работы по формированию 
                     позиции играет важную роль в формировании всесторонне сбалансированных...
@@ -211,7 +244,15 @@
             <li class="projects-list__item">
             <a class="projects-list__link" href="">
                 <div class="projects-list__thumb">
-                <img class="projects-list__img" src="./images/img5_1.jpg" width="370" alt="Коробки">
+                    <picture>
+                        <source srcset="./images/portfolio-overlay-desktop-5.jpg 1x,
+                                                        ./images/portfolio-overlay-desktop-5@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/portfolio-overlay-tablet-5.jpg 1x,
+                                                        ./images/portfolio-overlay-tablet-5@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/portfolio-overlay-mobile-5.jpg 1x,
+                                                        ./images/portfolio-overlay-mobile-5@2x.jpg 2x" media="(min-width: 320px)">
+                        <img src="./images/portfolio-overlay-mobile-5.jpg" alt="Коробки">
+                    </picture>
                 <p class="projects-list__overlay">
                     В своём стремлении улучшить пользовательский опыт мы упускаем, что непосредственные участники технического прогресса,
                     инициированные исключительно синтетически, своевременно верифицированы.
@@ -227,7 +268,15 @@
             <li class="projects-list__item">
             <a class="projects-list__link" href="">
                 <div class="projects-list__thumb">
-                <img class="projects-list__img" src="./images/img6_1.jpg" width="370" alt="Монитор">
+                    <picture>
+                        <source srcset="./images/portfolio-overlay-desktop-6.jpg 1x,
+                                                        ./images/portfolio-overlay-desktop-6@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/portfolio-overlay-tablet-6.jpg 1x,
+                                                        ./images/portfolio-overlay-tablet-6@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/portfolio-overlay-mobile-6.jpg 1x,
+                                                        ./images/portfolio-overlay-mobile-6@2x.jpg 2x" media="(min-width: 320px)">
+                        <img src="./images/portfolio-overlay-mobile-6.jpg" alt="Монитор">
+                    </picture>
                 <p class="projects-list__overlay">
                     Непосредственные участники технического прогресса верифицированы. Учитывая ключевые сценарии поведения,
                     глубокий уровень погружения способствует повышению качества паттернов поведения.
@@ -243,7 +292,15 @@
             <li class="projects-list__item">
             <a class="projects-list__link" href="">
                 <div class="projects-list__thumb">
-                <img class="projects-list__img" src="./images/img7_1.jpg" width="370" alt="Книга">
+                    <picture>
+                        <source srcset="./images/portfolio-overlay-desktop-7.jpg 1x,
+                                                        ./images/portfolio-overlay-desktop-7@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/portfolio-overlay-tablet-7.jpg 1x,
+                                                        ./images/portfolio-overlay-tablet-7@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/portfolio-overlay-mobile-7.jpg 1x,
+                                                        ./images/portfolio-overlay-mobile-7@2x.jpg 2x" media="(min-width: 320px)">
+                        <img src="./images/portfolio-overlay-mobile-7.jpg" alt="Книга">
+                    </picture>
                 <p class="projects-list__overlay">
                     Предварительные выводы неутешительны: повышение уровня гражданского 
                     сознания и технического прогресса напрямую зависит от дальнейших направлений
@@ -260,7 +317,15 @@
             <li class="projects-list__item">
             <a class="projects-list__link" href="">
                 <div class="projects-list__thumb">
-                <img class="projects-list__img" src="./images/img8_1.jpg" width="370" alt="Бирка">
+                    <picture>
+                        <source srcset="./images/portfolio-overlay-desktop-8.jpg 1x,
+                                                        ./images/portfolio-overlay-desktop-8@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/portfolio-overlay-tablet-8.jpg 1x,
+                                                        ./images/portfolio-overlay-tablet-8@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/portfolio-overlay-mobile-8.jpg 1x,
+                                                        ./images/portfolio-overlay-mobile-8@2x.jpg 2x" media="(min-width: 320px)">
+                        <img src="./images/portfolio-overlay-mobile-8.jpg" alt="Бирка">
+                    </picture>
                 <p class="projects-list__overlay">
                     Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: курс на
                     социально-ориентированный национальный проект, в своём представлении.
@@ -276,7 +341,15 @@
             <li class="projects-list__item">
             <a class="projects-list__link" href=""> 
             <div class="projects-list__thumb">
-                <img class="projects-list__img" src="./images/img9_1.jpg" width="370" alt="Ноутбук-на-столе">
+                <picture>
+                    <source srcset="./images/portfolio-overlay-desktop-9.jpg 1x,
+                                                    ./images/portfolio-overlay-desktop-9@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/portfolio-overlay-tablet-9.jpg 1x,
+                                                    ./images/portfolio-overlay-tablet-9@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/portfolio-overlay-mobile-9.jpg 1x,
+                                                    ./images/portfolio-overlay-mobile-9@2x.jpg 2x" media="(min-width: 320px)">
+                    <img src="./images/portfolio-overlay-mobile-9.jpg" alt="Ноутбук-на-столе">
+                </picture>
                 <p class="projects-list__overlay">
                     Значимость этих проблем настолько очевидна, что убеждённость некоторых оппонентов 
                     однозначно определяет каждого
