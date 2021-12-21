@@ -2222,11 +2222,12 @@ input:-webkit-autofill:active {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
     margin-bottom: 0;
     margin-right: 93px;
+    padding-top: 12px;
   }
   .foot-container__logo {
     text-align: left;
@@ -2245,6 +2246,7 @@ input:-webkit-autofill:active {
   }
   .footer-signup__title {
     text-align: left;
+    padding-top: 12px;
   }
   .footer-signup__email {
     width: 358px;

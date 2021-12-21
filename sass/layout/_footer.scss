@@ -256,9 +256,10 @@
   .social-invite {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    justify-content: baseline;
     margin-bottom: 0;
     margin-right: 93px;
+    padding-top: 12px;
   }
   .foot-container__logo {
     text-align: left;
@@ -275,6 +276,7 @@
   }
   .footer-signup__title {
     text-align: left;
+    padding-top: 12px;
   }
 
   .footer-signup__email {
