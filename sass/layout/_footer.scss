@@ -12,6 +12,10 @@
   margin-left: auto;
 }
 
+.footer-tablet-wrapper {
+  margin-bottom: 60px;
+}
+
 .foot-container {
   margin-bottom: 60px;
 }
@@ -91,20 +95,18 @@
 }
 
 .social-invite {
-  display: block;
-  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
 }
-
 .social-invite__title {
-  display: block;
   text-align: center;
+  margin-bottom: 20px;
   font-weight: 700;
   color: $background;
   font-size: 14px;
   line-height: 1.1428;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
   font-style: normal;
   font-weight: bold;
 }
@@ -227,6 +229,11 @@
     display: flex;
     justify-content: space-between;
     padding: 0 60px;
+    align-items: baseline;
+  }
+
+  .foot-container {
+    margin-bottom: 0;
   }
 
   .footer-signup__email {
@@ -234,12 +241,22 @@
     margin-right: auto;
     margin-left: auto;
   }
+  .footer-signup__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-signup__title {
+    text-align: baseline;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .basement-container {
     width: 1200px;
     display: flex;
+    align-items: baseline;
   }
   .social-invite__title {
     align-items: baseline;
@@ -248,6 +265,7 @@
 
   .footer-tablet-wrapper {
     display: flex;
+    align-items: baseline;
   }
   .foot-container {
     margin-bottom: 0;
@@ -259,7 +277,9 @@
     justify-content: baseline;
     margin-bottom: 0;
     margin-right: 93px;
-    padding-top: 12px;
+  }
+  .social-invite__title {
+    align-items: baseline;
   }
   .foot-container__logo {
     text-align: left;
@@ -276,7 +296,7 @@
   }
   .footer-signup__title {
     text-align: left;
-    padding-top: 12px;
+    text-align: baseline;
   }
 
   .footer-signup__email {

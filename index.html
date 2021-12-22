@@ -28,7 +28,6 @@
             <a class="navigation__logo--menu" href="index.html">Web<span class="navigation__name--menu">Studio</span></a>
             <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg class="mobile-button-icons" width="40" height="40" aria-label="Переключатель мобильного меню">
-                    <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
                     <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
                 </svg>
             </button>
@@ -39,7 +38,7 @@
             
                 <button class="menu-toggle-close js-close-menu" type="button">
                     <svg class="menu-button-icon" width="40" height="40">
-                        <use href="./images/icons.svg#icon-cross"></use>
+                        <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
                     </svg>
                 </button>
 
@@ -89,13 +88,13 @@
         </nav>
         <ul class="contacts-list contacts-list-tablet contacts-list-desktop">
             <li class="contacts-list__items">
-                <a class="contacts-list__link" href="mailto:info@devstudio.com">
+                <a class="contacts-list__link contacts-list__link--mail" href="mailto:info@devstudio.com">
                     <svg class="contacts-list__envelope" width="16" height="12">
                     <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>info@devstudio.com</a>
             </li>
             <li class="contacts-list__items">
-                <a class="contacts-list__link" href="tel:+380961111111">
+                <a class="contacts-list__link contacts-list__link--phone" href="tel:+380961111111">
                     <svg class="contacts-list__smartphone" width="10" height="16">
                     <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>+38 096 111 11 11</a>
@@ -147,8 +146,6 @@
                 <p class="feature-list__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
 
-
-
             <li class="feature-list__item">
                 <div class="feature-list__container">
                 <svg class="feature-list__icon-place" width="70" height="70">
@@ -158,6 +155,7 @@
                 <h3 class="feature-list__subtitle">Пунктуальность</h3>
                 <p class="feature-list__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
+
             <li class="feature-list__item">
                 <div class="feature-list__container">
                     <svg class="feature-list__icon-place" width="70" height="70">
@@ -475,6 +473,7 @@
     <div class="container basement-container">
         
     <div class="footer-tablet-wrapper">
+
     <div class="foot-container">
         <a class="foot-container__logo" href="index.html">Web<span class="foot-container__logo-text">Studio</span></a>
         <address class="foot-container__address">
@@ -487,7 +486,6 @@
             </ul>
         </address>
     </div>
-
     <div class="social-invite">
         <strong class="social-invite__title">ПРИСОЕДИНЯЙТЕСЬ</strong>
         <ul class="social-invite__list">

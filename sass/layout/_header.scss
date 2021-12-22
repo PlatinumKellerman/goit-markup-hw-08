@@ -1,4 +1,5 @@
 .menu-toggle {
+  background-color: $background;
   transition-property: color, background-color, fill;
   transition-duration: $transition-time;
   transition-timing-function: $cubic;
@@ -57,6 +58,7 @@
   right: 0;
   border: none;
   cursor: pointer;
+  background-color: $background;
   .menu-button-icon {
     border-radius: 50%;
     transition-property: color, background-color, fill;
@@ -134,7 +136,7 @@
   font-family: $fontRoboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 8vw;
   line-height: 1.1764;
   letter-spacing: 0.02em;
   color: $main-text;
@@ -387,6 +389,9 @@
     height: 100%;
     width: 480px;
   }
+  .menu-contacts-list__link--phone-number {
+    font-size: 34px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -426,8 +431,18 @@
     align-items: flex-start;
     list-style: none;
   }
-  .contacts-list__items {
-    margin: 5px;
+
+  .contacts-list__link--mail {
+    padding-top: 21px;
+    margin-bottom: 10px;
+  }
+
+  .contacts-list__link--phone {
+    padding-bottom: 21px;
+  }
+
+  .menu-contacts-list__link--phone-number {
+    font-size: 34px;
   }
 }
 
@@ -456,6 +471,10 @@
     margin-right: 292px;
   }
   .contacts-list__items {
-    padding-left: 30px;
+    padding: 32px 0;
+    margin-left: 30px;
+  }
+  .menu-contacts-list__link--phone-number {
+    font-size: 34px;
   }
 }
