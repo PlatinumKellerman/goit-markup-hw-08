@@ -149,7 +149,7 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 100%;
+  line-height: 0;
 }
 
 .projects-list__meta {
@@ -188,6 +188,7 @@
 
 .projects-list__link {
   display: block;
+  height: 100%;
   text-decoration: none;
   color: $main-h2h3;
   transition-property: box-shadow;
@@ -201,28 +202,49 @@
 }
 
 .projects-list__overlay {
-  overflow-y: auto;
+  display: block;
+  width: 100%;
+  height: auto;
   position: absolute;
   left: 0;
   top: 0;
+  bottom: 0;
   opacity: 0;
   background-image: linear-gradient(to right, rgba(33, 150, 243, 0.9), rgba(33, 150, 243, 0.9));
   transition-property: transform, opacity;
   transform: translateY(100%);
   transition-duration: $transition-time;
   transition-timing-function: $cubic;
+  overflow-y: auto;
+  scrollbar-color: $sroll-color1 $sroll-color2;
+  scrollbar-width: thin;
   .projects-list__link:focus &,
   .projects-list__link:hover & {
     transform: translateY(0);
     opacity: 1;
   }
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $sroll-color2;
+    border-radius: 50px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    border: 1px solid transparent;
+    background-clip: content-box;
+    background-color: $icon-unactive;
+  }
 }
+
 .projects-list__overlay--text {
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
   padding: 63px 24px;
   color: $background;
+  text-align: left;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -236,25 +258,23 @@
     margin: 15px;
   }
   .projects-list {
-    width: 768px;
     margin: -15px;
   }
-  .projects-list__meta {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+  .projects-list__thumb {
+    line-height: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .projects-list {
-    margin-left: auto;
-    margin-right: auto;
     margin: -15px;
   }
   .projects-list__item {
     margin-bottom: 0;
     flex-basis: calc((100% / 3) - 30px);
     margin: 15px;
+  }
+  .projects-list__thumb {
+    line-height: 0;
   }
 }

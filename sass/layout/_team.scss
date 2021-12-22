@@ -97,7 +97,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 768px;
     margin: -15px;
   }
   .container__team-item {
@@ -108,10 +107,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .container-team {
-    width: 1200px;
-    padding: 0 15px;
-  }
   .container__team-list {
     display: flex;
     flex-wrap: nowrap;

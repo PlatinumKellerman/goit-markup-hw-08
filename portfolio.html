@@ -15,7 +15,7 @@
 
     <!-- HEADER -->
     
-    <header class="header-box">
+    <header class="header-box header-box-tablet header-box-desktop">
     
         <div class="container container-tablet container-desktop">
     
@@ -30,7 +30,6 @@
                     <button type="button" class="menu-toggle js-open-menu" aria-expanded="false"
                         aria-controls="mobile-menu">
                         <svg class="mobile-button-icons" width="40" height="40" aria-label="Переключатель мобильного меню">
-                            <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
                             <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
                         </svg>
                     </button>
@@ -41,7 +40,7 @@
     
                     <button class="menu-toggle-close js-close-menu" type="button">
                         <svg class="menu-button-icon" width="40" height="40">
-                            <use href="./images/icons.svg#icon-cross"></use>
+                            <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
                         </svg>
                     </button>
     
@@ -49,10 +48,14 @@
     
                         <nav class="menu-navigation">
                             <ul class="menu-navigation-list">
-                                <li class="menu-navigation-list__item"> <a class="menu-navigation-list__link" href="./index.html">Студия</a>
+                                <li class="menu-navigation-list__item"> <a
+                                        class="menu-navigation-list__link"
+                                        href="./index.html">Студия</a>
                                 </li>
-                                <li class="menu-navigation-list__item"> <a class="menu-navigation-list__link--current" href="./portfolio.html">Портфолио</a></li>
-                                <li class="menu-navigation-list__item"> <a class="menu-navigation-list__link" href="">Контакты</a></li>
+                                <li class="menu-navigation-list__item"> <a class="menu-navigation-list__link menu-navigation-list__link--current"
+                                        href="./portfolio.html">Портфолио</a></li>
+                                <li class="menu-navigation-list__item"> <a class="menu-navigation-list__link"
+                                        href="">Контакты</a></li>
                             </ul>
                         </nav>
     
@@ -95,13 +98,13 @@
             </nav>
             <ul class="contacts-list contacts-list-tablet contacts-list-desktop">
                 <li class="contacts-list__items">
-                    <a class="contacts-list__link" href="mailto:info@devstudio.com">
+                    <a class="contacts-list__link contacts-list__link--mail" href="mailto:info@devstudio.com">
                         <svg class="contacts-list__envelope" width="16" height="12">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>info@devstudio.com</a>
                 </li>
                 <li class="contacts-list__items">
-                    <a class="contacts-list__link" href="tel:+380961111111">
+                    <a class="contacts-list__link contacts-list__link--phone" href="tel:+380961111111">
                         <svg class="contacts-list__smartphone" width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a>
@@ -179,9 +182,9 @@
                 </picture>
                 <div class="projects-list__overlay">
                     <p class="projects-list__overlay--text">
-                        Разнообразный и богатый опыт курс на социально-ориентированный
-                        национальный проект требует определения и уточнения
-                        системы обучения кадров.
+                        Технокряк это современная площадка распространения коронавируса.
+                        Компании используют эту платформу для цифрового
+                        шпионажа и атак на защищённые сервера конкурентов.
                     </p>
                 </div>
                 
