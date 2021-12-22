@@ -46,10 +46,6 @@
 .container__business-item {
   position: relative;
   list-style: none;
-  margin-right: 30px;
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -60,8 +56,10 @@
 
 @media screen and (min-width: 1199px) {
   .container__business-list {
-    width: 1170px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: -15px;
+  }
+  .container__business-item {
+    flex-basis: calc((100% / 3) - 30px);
+    margin: 15px;
   }
 }
