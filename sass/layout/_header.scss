@@ -52,10 +52,11 @@
 }
 
 .menu-toggle-close {
+  padding: 0;
   position: absolute;
   display: block;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
   border: none;
   cursor: pointer;
   background-color: $background;
@@ -64,11 +65,11 @@
     transition-property: color, background-color, fill;
     transition-duration: $transition-time;
     transition-timing-function: $cubic;
-
     &:hover,
     &:focus,
     &:active {
       fill: $accent;
+      border: 1px solid rgba(0, 0, 0, 0.1);
     }
   }
 }
@@ -85,7 +86,10 @@
 }
 
 .menu-navigation-list__item {
-  padding: 25px 0;
+  margin-bottom: 32px;
+  &:last-child {
+    margin: 0;
+  }
 }
 
 .menu-navigation-list__link {
@@ -98,7 +102,7 @@
   line-height: 1.175;
   color: $main-h2h3;
   letter-spacing: 0.02em;
-  transition-property: color, background-color;
+  transition-property: color;
   transition-duration: $transition-time;
   transition-timing-function: $cubic;
   &:hover,
@@ -140,7 +144,7 @@
   line-height: 1.1764;
   letter-spacing: 0.02em;
   color: $main-text;
-  transition-property: color, background-color;
+  transition-property: color;
   transition-duration: $transition-time;
   transition-timing-function: $cubic;
   &:hover,
@@ -159,7 +163,7 @@
   line-height: 1.1666;
   letter-spacing: 0.02em;
   color: $main-text;
-  transition-property: color, background-color;
+  transition-property: color;
   transition-duration: $transition-time;
   transition-timing-function: $cubic;
   &:hover,
@@ -432,9 +436,15 @@
     list-style: none;
   }
 
+  .contacts-list__items {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   .contacts-list__link--mail {
     padding-top: 21px;
-    margin-bottom: 10px;
   }
 
   .contacts-list__link--phone {
